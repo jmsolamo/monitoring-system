@@ -65,7 +65,6 @@ function RegisterForm() {
   ];
 
   const strength = getPasswordStrength(password);
-  const strengthLabels = ['Weak', 'Fair', 'Good', 'Strong'];
   const strengthColors = ['bg-red-500', 'bg-orange-500', 'bg-yellow-500', 'bg-green-500'];
 
   return (

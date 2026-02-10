@@ -93,16 +93,15 @@ export default function ActualExpenses() {
 
           {/* Navigation */}
           <nav className="flex-1 px-3 py-4 space-y-1">
-            <a 
-              href="#" 
+            <button 
               onClick={() => setActiveMenu('dashboard')}
-              className={`flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg ${
+              className={`flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg w-full text-left ${
                 activeMenu === 'dashboard' ? 'text-white bg-blue-600' : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
               <i className='bx bx-home-alt text-xl'></i>
               {isSidebarOpen && <span>Dashboard</span>}
-            </a>
+            </button>
             <a 
               href="/actual-expenses" 
               onClick={() => setActiveMenu('expenses')}
@@ -113,26 +112,24 @@ export default function ActualExpenses() {
               <i className='bx bx-dollar-circle text-xl'></i>
               {isSidebarOpen && <span>Expenses</span>}
             </a>
-            <a 
-              href="#" 
+            <button 
               onClick={() => setActiveMenu('reports')}
-              className={`flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg ${
+              className={`flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg w-full text-left ${
                 activeMenu === 'reports' ? 'text-white bg-blue-600' : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
               <i className='bx bx-bar-chart-alt-2 text-xl'></i>
               {isSidebarOpen && <span>Reports</span>}
-            </a>
-            <a 
-              href="#" 
+            </button>
+            <button 
               onClick={() => setActiveMenu('settings')}
-              className={`flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg ${
+              className={`flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg w-full text-left ${
                 activeMenu === 'settings' ? 'text-white bg-blue-600' : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
               <i className='bx bx-cog text-xl'></i>
               {isSidebarOpen && <span>Settings</span>}
-            </a>
+            </button>
           </nav>
 
           {/* User Profile */}
