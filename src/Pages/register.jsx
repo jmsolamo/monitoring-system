@@ -20,7 +20,7 @@ function RegisterForm() {
     }
 
     try {
-      const response = await fetch('http://localhost/enertech/api/register.php', {
+      const response = await fetch('/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

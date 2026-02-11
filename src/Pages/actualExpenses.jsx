@@ -7,7 +7,7 @@ export default function ActualExpenses() {
   const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost/enertech/api/getExpenses.php')
+    fetch('/api/getExpenses')
       .then(res => res.json())
       .then(data => {
         if (data.success) {
